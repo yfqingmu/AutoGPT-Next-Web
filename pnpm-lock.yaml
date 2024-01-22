@@ -60,8 +60,8 @@ dependencies:
     specifier: ^1.0.0-rc.12
     version: 1.0.0-rc.12
   chromadb:
-    specifier: ^1.5.9
-    version: 1.6.1
+    specifier: ^1.8.1
+    version: 1.8.1
   clsx:
     specifier: ^2.0.0
     version: 2.0.0
@@ -76,7 +76,7 @@ dependencies:
     version: 22.5.1
   langchain:
     specifier: ^0.0.91
-    version: 0.0.91(axios@0.26.1)(cheerio@1.0.0-rc.12)(chromadb@1.6.1)
+    version: 0.0.91(axios@0.26.1)(cheerio@1.0.0-rc.12)(chromadb@1.8.1)
   micro:
     specifier: ^10.0.1
     version: 10.0.1
@@ -2965,13 +2965,16 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /chromadb@1.6.1:
-    resolution: {integrity: sha512-jyIzbC8ucNG0EVOnt8fFjiiMmRw+OMJxHn/eWNuLkZ5jlNx/35GNdrYgRUo+Xg2aTFUT5H++9XzfHQrLhB8mEQ==}
+  /chromadb@1.8.1:
+    resolution: {integrity: sha512-NpbYydbg4Uqt/9BXKgkZXn0fqpsh2Z1yjhkhKH+rcHMoq0pwI18BFSU2QU7Fk/ZypwGefW2AvqyE/3ZJIgy4QA==}
     engines: {node: '>=14.17.0'}
     peerDependencies:
-      cohere-ai: ^5.0.0 || ^6.0.0
+      '@google/generative-ai': ^0.1.1
+      cohere-ai: ^5.0.0 || ^6.0.0 || ^7.0.0
       openai: ^3.0.0 || ^4.0.0
     peerDependenciesMeta:
+      '@google/generative-ai':
+        optional: true
       cohere-ai:
         optional: true
       openai:
@@ -5570,7 +5573,7 @@ packages:
     engines: {node: '>=6'}
     dev: false
 
-  /langchain@0.0.91(axios@0.26.1)(cheerio@1.0.0-rc.12)(chromadb@1.6.1):
+  /langchain@0.0.91(axios@0.26.1)(cheerio@1.0.0-rc.12)(chromadb@1.8.1):
     resolution: {integrity: sha512-oCilhNDZDSt8rdvnuVv5J3BIZ1FwCccdqdO6xHddiCko26UkAJ+wKRWmV8YQOYUDZzoRjp4ogDIifETfhfb30w==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -5719,7 +5722,7 @@ packages:
       axios: 0.26.1
       binary-extensions: 2.2.0
       cheerio: 1.0.0-rc.12
-      chromadb: 1.6.1
+      chromadb: 1.8.1
       expr-eval: 2.0.2
       flat: 5.0.2
       js-tiktoken: 1.0.8
